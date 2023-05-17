@@ -1,0 +1,7 @@
+.navheader {
+  display: flex;
+}
+
+.navheader--link {
+  padding-left: 57px;
+}

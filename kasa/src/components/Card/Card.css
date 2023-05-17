@@ -1,0 +1,6 @@
+.card {
+  max-width: 1fr;
+}
+.card--img {
+  max-width: 100%;
+}

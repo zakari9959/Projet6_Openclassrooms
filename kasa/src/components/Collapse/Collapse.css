@@ -1,0 +1,32 @@
+.collapse {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  color: white;
+  background-color: rgba(255, 96, 96, 1);
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.collapse--header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.collapse--title {
+  margin: 0;
+  padding-left: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.collapse--toggle-btn {
+  background-color: rgba(255, 96, 96, 1);
+  padding-right: 17px;
+  border: none;
+}
+.collapse--content {
+  color: rgba(255, 96, 96, 1);
+  background-color: rgba(246, 246, 246, 1);
+  font-size: 24px;
+  font-weight: 400;
+  padding: 27px 18px 18px 27px;
+}
