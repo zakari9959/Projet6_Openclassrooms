@@ -12,9 +12,9 @@ const Collapse = ({ title, children }) => {
 
   return (
     <div className="collapse">
-      <div className="collapse--header" onClick={toggleCollapse}>
-        <h3 className="collapse--title">{title}</h3>
-        <button className="collapse--toggle-btn">
+      <div className="collapseHeader" onClick={toggleCollapse}>
+        <h3 className="collapseTitle">{title}</h3>
+        <button className="collapseToggleBtn">
           {isCollapsed ? (
             <img src={flecheBas} alt="Collapse" />
           ) : (
@@ -22,7 +22,7 @@ const Collapse = ({ title, children }) => {
           )}
         </button>
       </div>
-      {!isCollapsed && <div className="collapse--content">{children}</div>}
+      {!isCollapsed && <div className="collapseContent">{children}</div>}
     </div>
   )
 }

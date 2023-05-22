@@ -1,9 +1,9 @@
 .banner {
-  width: 100%;
+  width: 90%;
   margin: 50px 0;
   position: relative;
 }
-.banner--overlay {
+.bannerOverlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -12,13 +12,13 @@
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.3); /* Couleur de fond semi-transparente */
 }
-.banner--img {
+.bannerImg {
   width: 100%;
   max-height: 150px;
   object-fit: cover;
   border-radius: 25px;
 }
-.banner--title {
+.bannerTitle {
   position: absolute;
   top: 50%;
   left: 50%;

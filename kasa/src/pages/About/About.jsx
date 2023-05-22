@@ -5,7 +5,7 @@ import Collapse from '../../components/Collapse/Collapse'
 import './About.css'
 //import ReactDOM from 'react-dom'
 const About = () => (
-  <div className="about--page">
+  <div className="aboutPage">
     <Banner image={bannerImage} showText={false} />{' '}
     <Collapse
       title={'Fiabilité'}

@@ -5,7 +5,7 @@ import './Home.css'
 import Gallery from '../../components/Gallery/Gallery'
 //import ReactDOM from 'react-dom'
 const Home = () => (
-  <div className="home--page">
+  <div className="homePage">
     <Banner image={bannerImage} showText={true} />
     <Gallery />
   </div>
