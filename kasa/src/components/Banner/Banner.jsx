@@ -4,10 +4,10 @@ import './Banner.css'
 const Banner = ({ image, showText }) => {
   return (
     <div className="banner">
-      <div className="bannerOverlay" />
-      <img className="bannerImg" src={image} alt="paysage de montagne" />
+      <div className="banner__overlay" />
+      <img className="banner__img" src={image} alt="paysage de montagne" />
       {showText && (
-        <h2 className="bannerTitle">Chez vous, partout et ailleurs</h2>
+        <h2 className="banner__title">Chez vous, partout et ailleurs</h2>
       )}
     </div>
   )

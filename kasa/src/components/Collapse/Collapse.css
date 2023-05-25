@@ -7,23 +7,26 @@
   margin-bottom: 20px;
   border-radius: 5px;
 }
-.collapseHeader {
+.rotate {
+  transform: scaleY(-1);
+}
+.collapse__header {
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
 }
-.collapseTitle {
+.collapse__title {
   margin: 0;
   padding-left: 15px;
   font-size: 24px;
   font-weight: 500;
 }
-.collapseToggleBtn {
+.collapse__togglebtn {
   background-color: rgba(255, 96, 96, 1);
   padding-right: 17px;
   border: none;
 }
-.collapseContent {
+.collapse__content {
   color: rgba(255, 96, 96, 1);
   background-color: rgba(246, 246, 246, 1);
   font-size: 24px;

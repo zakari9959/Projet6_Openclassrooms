@@ -3,6 +3,9 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
 }
+.grise {
+  color: rgba(227, 227, 227, 1);
+}
 #root {
   display: flex;
   flex-direction: column;

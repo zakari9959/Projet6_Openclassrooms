@@ -3,7 +3,7 @@
   margin: 50px 0;
   position: relative;
 }
-.bannerOverlay {
+.banner__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -12,13 +12,13 @@
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.3); /* Couleur de fond semi-transparente */
 }
-.bannerImg {
+.banner__img {
   width: 100%;
   max-height: 150px;
   object-fit: cover;
   border-radius: 25px;
 }
-.bannerTitle {
+.banner__title {
   position: absolute;
   top: 50%;
   left: 50%;

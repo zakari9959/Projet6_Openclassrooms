@@ -1,28 +1,30 @@
-import React, { useEffect, useState } from 'react'
-import './Gallery.css'
-import Card from '../Card/Card'
+import React, { useState } from 'react'
 
-const Gallery = () => {
-  const [jsonData, setJsonData] = useState([])
+const Carousel = ({ selectedItem }) => {
+  const [images] = useState(selectedItem)
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-  useEffect(() => {
-    fetch('../../data/logements.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setJsonData(data)
-      })
-      .catch((error) => {
-        console.log('Erreur lors de la récupération des données JSON.')
-      })
-  }, [])
+  const goToPrevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+    )
+  }
+
+  const goToNextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+  }
+
+  const currentImage = images[currentIndex]
+
+  console.log(currentImage)
 
   return (
-    <div className="gallery">
-      {jsonData.map((item) => (
-        <Card key={item.id} data={item} />
-      ))}
+    <div className="carousel">
+      <button onClick={goToPrevSlide}>Précédent</button>
+      <img src={currentImage} alt="carousel" />
+      <button onClick={goToNextSlide}>Suivant</button>
     </div>
   )
 }
 
-export default Gallery
+export default Carousel
