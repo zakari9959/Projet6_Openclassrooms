@@ -1,6 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
+import { createRoot } from 'react-dom/client'
 import PagesRoutes from './pages/PagesRoutes/PagesRoutes'
+import './index.css'
 
-ReactDOM.render(<PagesRoutes />, document.getElementById('root'))
+const root = document.getElementById('root')
+createRoot(root).render(<PagesRoutes />)

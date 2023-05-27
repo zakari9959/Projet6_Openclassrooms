@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Collapse.css'
 import flecheBas from './fleche--bas.svg'
 
-const Collapse = ({ title, children }) => {
+const Collapse = ({ title, children, className }) => {
   const [isCollapsed, setIsCollapsed] = useState(true)
 
   const toggleCollapse = () => {
@@ -10,7 +10,7 @@ const Collapse = ({ title, children }) => {
   }
 
   return (
-    <div className="collapse">
+    <div className={`collapse ${className}`}>
       <div className="collapse__header" onClick={toggleCollapse}>
         <h3 className="collapse__title">{title}</h3>
         <button className="collapse__togglebtn">

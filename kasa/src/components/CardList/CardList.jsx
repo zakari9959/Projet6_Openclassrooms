@@ -7,7 +7,12 @@ const CardList = () => {
   return (
     <div className="gallery">
       {jsonData.map((item) => (
-        <Card id={item.id} title={item.title} cover={item.cover} />
+        <Card
+          key={item.id}
+          id={item.id}
+          title={item.title}
+          cover={item.cover}
+        />
       ))}
     </div>
   )

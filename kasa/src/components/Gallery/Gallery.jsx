@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import flecheDroite from '../../assets/fleche--droite.svg'
+import './Gallery.css'
 
-const Carousel = ({ selectedItem }) => {
-  const [images] = useState(selectedItem)
+const Gallery = ({ pictures }) => {
+  const [images] = useState(pictures)
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const goToPrevSlide = () => {
@@ -16,15 +18,32 @@ const Carousel = ({ selectedItem }) => {
 
   const currentImage = images[currentIndex]
 
-  console.log(currentImage)
+  console.log(currentIndex)
 
   return (
     <div className="carousel">
-      <button onClick={goToPrevSlide}>Précédent</button>
-      <img src={currentImage} alt="carousel" />
-      <button onClick={goToNextSlide}>Suivant</button>
+      <img src={currentImage} alt="gallery" className="carousel__img" />
+      {images.length > 1 && (
+        <>
+          <img
+            src={flecheDroite}
+            alt="prev"
+            className="carousel__button left"
+            onClick={goToPrevSlide}
+          />
+          <p className="carousel__count">
+            {currentIndex + 1}/{images.length}
+          </p>
+          <img
+            src={flecheDroite}
+            alt="prev"
+            className="carousel__button right"
+            onClick={goToNextSlide}
+          />
+        </>
+      )}
     </div>
   )
 }
 
-export default Carousel
+export default Gallery

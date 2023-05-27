@@ -1,7 +1,7 @@
 .collapse {
   display: flex;
   flex-direction: column;
-  width: 75%;
+
   color: white;
   background-color: rgba(255, 96, 96, 1);
   margin-bottom: 20px;

@@ -1,0 +1,37 @@
+.fichelogement__info {
+  margin: 30px 100px 0 100px;
+}
+.fichelogement__info__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+.fichelogement__info h1 {
+  font-size: 36px;
+}
+.fichelogement__info h2 {
+  font-size: 18px;
+  margin-bottom: 23px;
+}
+.fichelogement__info__tags {
+  display: flex;
+  align-items: center;
+}
+.fichelogement__info__tag {
+  margin: 0 10px;
+  font-size: 14px;
+  min-width: 115px;
+  padding: 2px 15px;
+  color: white;
+  background-color: rgba(255, 96, 96, 1);
+  text-align: center;
+  border-radius: 10px;
+}
+.fichelogement__info__collapse {
+  width: 48%;
+}
+.fichelogement__info__collapses {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}

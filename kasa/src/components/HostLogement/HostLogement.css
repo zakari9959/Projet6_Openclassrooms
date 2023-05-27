@@ -1,0 +1,14 @@
+.fichelogement__host {
+  display: flex;
+  align-items: center;
+}
+.fichelogement__host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 40px;
+}
+.fichelogement__host__name {
+  font-size: 18px;
+  padding: 10px;
+  text-align: right;
+}
