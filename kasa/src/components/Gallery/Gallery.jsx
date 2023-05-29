@@ -1,11 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import flecheDroite from '../../assets/fleche--droite.svg'
 import './Gallery.css'
 
 const Gallery = ({ pictures }) => {
   const [images] = useState(pictures)
   const [currentIndex, setCurrentIndex] = useState(0)
-
+  useEffect(() => {
+    images.forEach((imageUrl) => {
+      const image = new Image()
+      image.src = imageUrl
+    })
+  }, [images])
   const goToPrevSlide = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
@@ -18,15 +23,13 @@ const Gallery = ({ pictures }) => {
 
   const currentImage = images[currentIndex]
 
-  console.log(currentIndex)
-
   return (
     <div className="carousel">
       <img src={currentImage} alt="gallery" className="carousel__img" />
       {images.length > 1 && (
         <>
           <img
-            src={flecheDroite}
+            src={flecheDroite} //Gauche
             alt="prev"
             className="carousel__button left"
             onClick={goToPrevSlide}
@@ -36,7 +39,7 @@ const Gallery = ({ pictures }) => {
           </p>
           <img
             src={flecheDroite}
-            alt="prev"
+            alt="next"
             className="carousel__button right"
             onClick={goToNextSlide}
           />

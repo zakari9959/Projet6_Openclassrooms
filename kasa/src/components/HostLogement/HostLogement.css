@@ -1,6 +1,7 @@
 .fichelogement__host {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .fichelogement__host img {
   width: 64px;
@@ -11,4 +12,6 @@
   font-size: 18px;
   padding: 10px;
   text-align: right;
+  font-weight: 500;
+  max-width: 50%;
 }

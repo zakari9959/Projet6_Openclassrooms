@@ -1,6 +1,6 @@
 import React from 'react'
 import jsonData from '../../data/logements.json'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Gallery from '../../components/Gallery/Gallery'
 import HostLogement from '../../components/HostLogement/HostLogement'
 import Rating from '../../components/Rating/Rating'
@@ -63,7 +63,7 @@ const FicheLogement = () => {
       </div>
     )
   } else {
-    ;<Link to="/*" />
+    window.location.replace('/*')
   }
 }
 

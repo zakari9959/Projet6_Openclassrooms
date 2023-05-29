@@ -9,16 +9,18 @@
   height: 100%;
   position: relative;
   object-fit: cover;
+  border-radius: 10px;
 }
 .card__title {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 20px;
   color: white;
   font-size: 16px;
   background-color: none;
   padding: 5px 10px 0 0;
   z-index: 11;
+  font-weight: 500;
 }
 .card__overlay {
   background: linear-gradient(
@@ -30,5 +32,6 @@
   width: 100%;
   position: absolute;
   top: 0;
+  border-radius: 10px;
   z-index: 10;
 }

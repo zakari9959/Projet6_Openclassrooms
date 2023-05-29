@@ -1,3 +1,10 @@
 .grise {
   color: rgba(227, 227, 227, 1);
 }
+.rating {
+  padding-top: 5px;
+  font-size: 24px;
+}
+.fas {
+  margin: 10px;
+}

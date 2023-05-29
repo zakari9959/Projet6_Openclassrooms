@@ -3,7 +3,12 @@
   align-items: center;
   flex-direction: column;
   margin: 0 100px 50px;
+  flex-grow: 1;
 }
 .about__collapse {
   width: 75%;
+}
+.collapse__content {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }

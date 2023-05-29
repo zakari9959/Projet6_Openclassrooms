@@ -1,3 +1,7 @@
+.fichelogement {
+  flex-grow: 1;
+}
+
 .fichelogement__info {
   margin: 30px 100px 0 100px;
 }
@@ -8,10 +12,12 @@
 }
 .fichelogement__info h1 {
   font-size: 36px;
+  font-weight: 500;
 }
 .fichelogement__info h2 {
   font-size: 18px;
   margin-bottom: 23px;
+  font-weight: 500;
 }
 .fichelogement__info__tags {
   display: flex;
@@ -26,9 +32,14 @@
   background-color: rgba(255, 96, 96, 1);
   text-align: center;
   border-radius: 10px;
+  font-weight: 500;
 }
 .fichelogement__info__collapse {
   width: 48%;
+}
+.fichelogement__info__collapse h3 {
+  font-size: 18px;
+  padding: 13px 20px;
 }
 .fichelogement__info__collapses {
   display: flex;
