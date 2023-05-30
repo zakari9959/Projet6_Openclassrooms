@@ -5,7 +5,7 @@ import jsonData from '../../data/logements.json'
 
 const CardList = () => {
   return (
-    <div className="gallery">
+    <div className="cardlist">
       {jsonData.map((item) => (
         <Card
           key={item.id}

@@ -13,5 +13,5 @@
   padding: 10px;
   text-align: right;
   font-weight: 500;
-  max-width: 50%;
+  width: min-content;
 }

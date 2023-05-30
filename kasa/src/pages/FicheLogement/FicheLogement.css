@@ -44,5 +44,10 @@
 .fichelogement__info__collapses {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+}
+.fichelogement__info__collapses .collapse {
+  width: 48%;
+}
+.fichelogement__info__collapses .collapse__title {
+  padding: 13px 20px;
 }

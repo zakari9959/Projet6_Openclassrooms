@@ -8,7 +8,3 @@
 .about__collapse {
   width: 75%;
 }
-.collapse__content {
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}

@@ -5,6 +5,7 @@ import Gallery from '../../components/Gallery/Gallery'
 import HostLogement from '../../components/HostLogement/HostLogement'
 import Rating from '../../components/Rating/Rating'
 import Collapse from '../../components/Collapse/Collapse'
+import Error from '../../pages/Error/Error'
 import './FicheLogement.css'
 
 const FicheLogement = () => {
@@ -46,13 +47,8 @@ const FicheLogement = () => {
             </div>
           </div>
           <div className="fichelogement__info__collapses">
+            <Collapse title="Description" children={description} />
             <Collapse
-              className="fichelogement__info__collapse"
-              title="Description"
-              children={description}
-            />
-            <Collapse
-              className="fichelogement__info__collapse"
               title="Equipements"
               children={equipments.map((equipment, index) => (
                 <p key={index}>{equipment}</p>
@@ -63,7 +59,7 @@ const FicheLogement = () => {
       </div>
     )
   } else {
-    window.location.replace('/*')
+    return <Error />
   }
 }
 

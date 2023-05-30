@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   max-height: 100%;
+  flex-grow: 1;
 }
 .error__404 {
   font-size: 288px;

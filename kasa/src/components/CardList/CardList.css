@@ -1,7 +1,9 @@
-.gallery {
+.cardlist {
   background-color: #f7f7f7;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 50px;
+  width: 1240px;
+  border-radius: 25px;
 }
