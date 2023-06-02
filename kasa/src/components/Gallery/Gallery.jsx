@@ -30,7 +30,7 @@ const Gallery = ({ pictures }) => {
         <>
           <img
             src={flecheDroite} //Gauche
-            alt="prev-btn"
+            alt="Cliquer sur le bouton précédent"
             className="carousel__button left"
             onClick={goToPrevSlide}
           />
@@ -39,7 +39,7 @@ const Gallery = ({ pictures }) => {
           </p>
           <img
             src={flecheDroite}
-            alt="next-btn"
+            alt="Cliquer sur le bouton suivant"
             className="carousel__button right"
             onClick={goToNextSlide}
           />

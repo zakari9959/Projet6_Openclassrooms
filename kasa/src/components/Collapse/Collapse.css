@@ -24,7 +24,7 @@
 }
 .collapse__togglebtn {
   background-color: rgba(255, 96, 96, 1);
-  padding-right: 17px;
+  margin-right: 17px;
   border: none;
 }
 .collapse__content {

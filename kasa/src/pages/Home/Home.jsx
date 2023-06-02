@@ -5,7 +5,7 @@ import './Home.css'
 import CardList from '../../components/CardList/CardList'
 
 const Home = () => (
-  <div className="homePage">
+  <div className="homepage">
     <Banner image={bannerImage} showText={true} />
     <CardList />
   </div>

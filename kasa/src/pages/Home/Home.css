@@ -1,7 +1,13 @@
-.homePage {
+.homepage {
   display: flex;
   margin: 0 100px;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+}
+
+@media (max-width: 725px) {
+  .homepage {
+    margin: 20px;
+  }
 }

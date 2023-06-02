@@ -5,6 +5,15 @@
   margin: 0 100px 50px;
   flex-grow: 1;
 }
-.about__collapse {
+.about__collapses {
   width: 75%;
+}
+@media (max-width: 725px) {
+  .about {
+    margin: 20px;
+  }
+  .about__collapses {
+    width: 100%;
+    margin-top: 20px;
+  }
 }

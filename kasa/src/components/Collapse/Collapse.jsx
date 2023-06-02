@@ -10,7 +10,7 @@ const Collapse = ({ title, children }) => {
   }
 
   return (
-    <div className={`collapse`}>
+    <div className="collapse">
       <div className="collapse__header" onClick={toggleCollapse}>
         <h3 className="collapse__title">{title}</h3>
         <button className="collapse__togglebtn">

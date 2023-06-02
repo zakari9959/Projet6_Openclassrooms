@@ -1,7 +1,7 @@
 .card {
   width: 340px;
   height: 340px;
-  margin: 50px 30px 0;
+  margin-bottom: 50px;
   position: relative;
 }
 .card__img {
@@ -34,4 +34,11 @@
   top: 0;
   border-radius: 10px;
   z-index: 10;
+}
+@media (max-width: 725px) {
+  .card {
+    width: 335px;
+    height: 255px;
+    max-width: 100%;
+  }
 }

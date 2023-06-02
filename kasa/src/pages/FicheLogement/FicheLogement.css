@@ -22,9 +22,9 @@
 .fichelogement__info__tags {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .fichelogement__info__tag {
-  margin: 0 10px;
   font-size: 14px;
   min-width: 115px;
   padding: 2px 15px;
@@ -33,13 +33,7 @@
   text-align: center;
   border-radius: 10px;
   font-weight: 500;
-}
-.fichelogement__info__collapse {
-  width: 48%;
-}
-.fichelogement__info__collapse h3 {
-  font-size: 18px;
-  padding: 13px 20px;
+  margin: 10px 10px 0 0;
 }
 .fichelogement__info__collapses {
   display: flex;
@@ -50,4 +44,74 @@
 }
 .fichelogement__info__collapses .collapse__title {
   padding: 13px 20px;
+}
+@media (max-width: 725px) {
+  .carousel {
+    margin: 20px;
+  }
+  .fichelogement__info {
+    margin: 20px;
+  }
+}
+@media (max-width: 725px) {
+  .fichelogement__info__top {
+    flex-direction: column;
+  }
+  .fichelogement__info--droite {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fichelogement__info--gauche h1 {
+    font-size: 18px;
+  }
+  .fichelogement__info--gauche h2 {
+    font-size: 14px;
+  }
+  .fichelogement__info__tag {
+    font-size: 10px;
+    min-width: 84px;
+  }
+  .fichelogement__host img {
+    width: 33px;
+    height: 33px;
+  }
+
+  .fichelogement__host__name {
+    font-size: 12px;
+  }
+  .fichelogement__info__collapses {
+    flex-direction: column;
+  }
+
+  .fichelogement__info__collapses .collapse {
+    width: 100%;
+  }
+  .collapse {
+    width: 100%;
+  }
+  .collapse__title {
+    font-size: 13px;
+    padding: 10px;
+  }
+  .collapse__togglebtn {
+    width: 16px;
+  }
+  .collapse img {
+    width: 16px;
+  }
+  .collapse__content {
+    font-size: 12px;
+    padding: 13px 20px 20px;
+  }
+  .carousel__img {
+    height: 335px;
+  }
+  .banner__img {
+    height: 111px;
+  }
+  .banner {
+    height: 111px;
+  }
 }

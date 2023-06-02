@@ -7,7 +7,7 @@ import './About.css'
 const About = () => (
   <div className="about">
     <Banner image={bannerImage} showText={false} />{' '}
-    <div className="about__collapse">
+    <div className="about__collapses">
       <Collapse
         title={'Fiabilité'}
         children={

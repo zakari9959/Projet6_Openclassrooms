@@ -4,3 +4,14 @@ header {
   justify-content: space-between;
   margin: 40px 100px 0 100px;
 }
+@media (max-width: 725px) {
+  header {
+    margin: 20px;
+  }
+  header svg {
+    width: 145px;
+  }
+  .navheader__link {
+    font-size: 12px;
+  }
+}
