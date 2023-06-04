@@ -4,17 +4,16 @@
   flex-direction: column;
   margin: 0 100px 50px;
   flex-grow: 1;
+  &__collapses {
+    width: 75%;
+  }
 }
-.about__collapses {
-  width: 75%;
-}
-
 @media (max-width: 725px) {
   .about {
     margin: 20px;
+    &__collapses {
+      width: 100%;
+      margin-top: 20px;
+    }
   }
-  .about__collapses {
-    width: 100%;
-    margin-top: 20px;
-  }
-}/*# sourceMappingURL=About.css.map */
+}

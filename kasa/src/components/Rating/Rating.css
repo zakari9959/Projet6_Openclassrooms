@@ -1,11 +1,10 @@
-.grise {
-  color: rgba(227, 227, 227, 1);
-}
 .rating {
   padding-top: 5px;
-
   font-size: 12px;
 }
-.fas {
-  margin: 5px;
+.rating--grise {
+  color: rgb(227, 227, 227);
 }
+.rating .fas {
+  margin: 5px;
+}/*# sourceMappingURL=Rating.css.map */

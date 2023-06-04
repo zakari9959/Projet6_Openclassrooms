@@ -2,17 +2,24 @@
   position: relative;
   margin: 20px 100px;
 }
-
 .carousel__button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 25px;
 }
+.carousel__button--left {
+  left: 0;
+  transform: scaleX(-1) translateY(-50%);
+}
+.carousel__button--right {
+  right: 0;
+}
 .carousel__count {
   position: absolute;
   bottom: 5px;
   left: 50%;
+  transform: translateX(-50%);
   color: white;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -23,14 +30,23 @@
 .carousel__img {
   width: 100%;
   height: 415px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 25px;
 }
-.left {
-  left: 0;
-  transform: scaleX(-1) translateY(-50%);
-}
 
-.right {
-  right: 0;
-}
+@media (max-width: 725px) {
+  .carousel {
+    margin: 20px;
+  }
+  .carousel__img {
+    height: 255px;
+  }
+  .carousel__button {
+    height: 20px;
+    padding: 10px;
+  }
+  .carousel__count {
+    display: none;
+  }
+}/*# sourceMappingURL=Gallery.css.map */

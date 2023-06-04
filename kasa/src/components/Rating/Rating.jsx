@@ -10,7 +10,7 @@ const Rating = ({ value }) => {
   }
 
   for (let i = value; i < 5; i++) {
-    emptyStars.push(<i className="fas fa-star grise" key={i}></i>)
+    emptyStars.push(<i className="fas fa-star rating--grise" key={i}></i>)
   }
 
   return (

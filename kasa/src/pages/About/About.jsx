@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../../components/Banner/Banner'
-import bannerImage from '../../components/Banner/banner--about.png'
+import bannerImage from '../..//assets/banner--about.png'
 import Collapse from '../../components/Collapse/Collapse'
 import './About.css'
 //import ReactDOM from 'react-dom'

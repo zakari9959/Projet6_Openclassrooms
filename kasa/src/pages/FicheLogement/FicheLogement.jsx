@@ -30,7 +30,7 @@ const FicheLogement = () => {
         <Gallery pictures={pictures} />
         <div className="fichelogement__info">
           <div className="fichelogement__info__top">
-            <div className="fichelogement__info--gauche">
+            <div className="fichelogement__info__gauche">
               <h1>{title}</h1>
               <h2>{location}</h2>
               <div className="fichelogement__info__tags">
@@ -41,7 +41,7 @@ const FicheLogement = () => {
                 ))}
               </div>
             </div>
-            <div className="fichelogement__info--droite">
+            <div className="fichelogement__info__droite">
               <HostLogement host={host} />
               <Rating value={rating} />
             </div>

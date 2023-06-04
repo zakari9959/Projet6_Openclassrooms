@@ -1,20 +1,21 @@
-.error__page {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  max-height: 100%;
-  flex-grow: 1;
-}
-.error__404 {
-  font-size: 288px;
-  margin: 50px 0 0 0;
+@charset "UTF-8";
+.error__link  {
+  font-size: 18px;
+  margin-bottom: 100px;
 }
 .error__oups {
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 100px;
 }
-.error__link {
-  font-size: 18px;
-  margin-bottom: 100px;
+.error__404 {
+  font-size: 288px;
+  margin: 50px 0 0 0;
 }
+.error__page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100%;
+  flex-grow: 1;
+}/*# sourceMappingURL=Error.css.map */

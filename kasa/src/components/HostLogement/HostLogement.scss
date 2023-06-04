@@ -1,0 +1,28 @@
+.hostlogement {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  & img {
+    width: 64px;
+    height: 64px;
+    border-radius: 40px;
+  }
+  &__name {
+    font-size: 18px;
+    padding: 10px;
+    text-align: right;
+    font-weight: 500;
+    width: min-content;
+  }
+}
+@media (max-width: 725px) {
+  .hostlogement {
+    &__name {
+      font-size: 12px;
+    }
+    & img {
+      width: 33px;
+      height: 33px;
+    }
+  }
+}

@@ -1,17 +1,28 @@
-.fichelogement__host {
+.hostlogement {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.fichelogement__host img {
+.hostlogement img {
   width: 64px;
   height: 64px;
   border-radius: 40px;
 }
-.fichelogement__host__name {
+.hostlogement__name {
   font-size: 18px;
   padding: 10px;
   text-align: right;
   font-weight: 500;
+  width: -moz-min-content;
   width: min-content;
 }
+
+@media (max-width: 725px) {
+  .hostlogement__name {
+    font-size: 12px;
+  }
+  .hostlogement img {
+    width: 33px;
+    height: 33px;
+  }
+}/*# sourceMappingURL=HostLogement.css.map */

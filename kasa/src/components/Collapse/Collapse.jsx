@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Collapse.css'
-import flecheBas from './fleche--bas.svg'
+import flecheBas from '../../assets/fleche--bas.svg'
 
 const Collapse = ({ title, children }) => {
   const [isCollapsed, setIsCollapsed] = useState(true)
@@ -17,11 +17,21 @@ const Collapse = ({ title, children }) => {
           {isCollapsed ? (
             <img src={flecheBas} alt="Collapse" />
           ) : (
-            <img src={flecheBas} className="rotate" alt="Expand" />
+            <img
+              src={flecheBas}
+              className="collapse__togglebtn--rotate"
+              alt="Expand"
+            />
           )}
         </button>
       </div>
-      {!isCollapsed && <div className="collapse__content">{children}</div>}
+      <div
+        className={`collapse__content ${
+          isCollapsed ? 'collapse__content--hide' : 'collapse__content--show'
+        }`}
+      >
+        {children}
+      </div>
     </div>
   )
 }

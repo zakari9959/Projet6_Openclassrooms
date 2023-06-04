@@ -1,0 +1,10 @@
+.rating {
+  padding-top: 5px;
+  font-size: 12px;
+  &--grise {
+    color: rgba(227, 227, 227, 1);
+  }
+  & .fas {
+    margin: 5px;
+  }
+}
