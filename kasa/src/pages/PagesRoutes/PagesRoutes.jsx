@@ -14,7 +14,6 @@ const PagesRoutes = () => (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/fichelogement/:id" element={<FicheLogement />} />
-        {/*Ajouter l'id sur cette route*/}
         <Route path="/about" element={<About />} />
         <Route path="/*" element={<Error />} />
       </Routes>

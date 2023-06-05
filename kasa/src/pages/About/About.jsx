@@ -6,7 +6,7 @@ import './About.css'
 //import ReactDOM from 'react-dom'
 const About = () => (
   <div className="about">
-    <Banner image={bannerImage} showText={false} />{' '}
+    <Banner image={bannerImage} showText={false} />
     <div className="about__collapses">
       <Collapse
         title={'Fiabilité'}
