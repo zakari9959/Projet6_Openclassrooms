@@ -37,10 +37,11 @@
 
 @media (max-width: 725px) {
   .carousel {
-    margin: 20px;
+    margin: 0 20px;
   }
   .carousel__img {
     height: 255px;
+    border-radius: 10px;
   }
   .carousel__button {
     height: 20px;

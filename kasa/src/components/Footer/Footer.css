@@ -12,4 +12,15 @@ footer {
 footer p {
   padding: 30px 0;
   text-align: center;
+}
+
+@media (max-width: 725px) {
+  footer {
+    padding: 65px 0 55px;
+  }
+  footer p {
+    font-size: 12px;
+    width: 133px;
+    padding: 10px 0;
+  }
 }/*# sourceMappingURL=Footer.css.map */

@@ -14,3 +14,14 @@ footer {
     text-align: center;
   }
 }
+
+@media (max-width: 725px) {
+  footer {
+    padding: 65px 0 55px;
+    p {
+      font-size: 12px;
+      width: 133px;
+      padding: 10px 0;
+    }
+  }
+}

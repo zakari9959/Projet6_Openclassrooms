@@ -30,7 +30,7 @@ const Collapse = ({ title, children }) => {
           isCollapsed ? 'collapse__content--hide' : 'collapse__content--show'
         }`}
       >
-        {children}
+        <div className="collapse__content__text">{children}</div>
       </div>
     </div>
   )

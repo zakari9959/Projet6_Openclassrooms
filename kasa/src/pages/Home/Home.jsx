@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../../components/Banner/Banner'
-import bannerImage from '../../assets/banner--home.png'
+import bannerImage from '../../assets/banner--home.webp'
 import './Home.css'
 import CardList from '../../components/CardList/CardList'
 

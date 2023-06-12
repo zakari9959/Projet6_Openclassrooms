@@ -2,17 +2,18 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   color: white;
   &__header {
     display: flex;
     justify-content: space-between;
     border-radius: 5px;
     background-color: rgba(255, 96, 96, 1);
+    align-items: center;
   }
   &__title {
     margin: 0;
-    padding: 5px 15px;
+    padding: 10px 15px;
     font-size: 24px;
     font-weight: 500;
   }
@@ -31,27 +32,29 @@
     font-weight: 400;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding: 27px 18px 18px 27px;
+    height: 100%;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.5s ease-out;
+    &__text {
+      padding: 27px 18px 18px 27px;
+    }
     &--show {
-      max-height: 500px;
-      padding: 20px 18px 18px 27px;
+      max-height: 200px;
     }
     &--hide {
       max-height: 0;
-      padding: 0 18px 0 27px;
-      margin: 20px 0 18px 0;
+      transition: max-height 0.3s ease-out;
     }
   }
 }
 
 @media (max-width: 725px) {
   .collapse {
+    margin-bottom: 20px;
     &__title {
       font-size: 13px;
-      padding: 10px;
+      padding: 10px 0 10px 10px;
     }
     &__togglebtn {
       width: 16px;
@@ -61,13 +64,9 @@
     }
     &__content {
       font-size: 12px;
-      padding: 0 20px;
-      &--show {
+
+      &__text {
         padding: 13px 20px 20px;
-      }
-      &--hide {
-        padding: 0 20px;
-        margin: 13px 0 20px 0;
       }
     }
   }

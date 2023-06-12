@@ -35,9 +35,10 @@
 }
 @media (max-width: 725px) {
   .carousel {
-    margin: 20px;
+    margin: 0 20px;
     &__img {
       height: 255px;
+      border-radius: 10px;
     }
     &__button {
       height: 20px;
