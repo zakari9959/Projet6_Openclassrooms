@@ -7,6 +7,7 @@
   top: 50%;
   transform: translateY(-50%);
   padding: 25px;
+  cursor: pointer;
 }
 .carousel__button--left {
   left: 0;
